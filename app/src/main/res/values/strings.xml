@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">KUET WebSite</string>
+    <string name="alertexit">Do you really want to exit?</string>
+    <string name="alertnegative">No</string>
+    <string name="alertnepositive">Yes</string>
+</resources>

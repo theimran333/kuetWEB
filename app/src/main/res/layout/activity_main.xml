@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <WebView
+        android:id="@+id/webViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menuBAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_openDirection="up"
+        app:menu_fab_label=""
+        app:menu_showShadow="true"
+        fab:menu_colorNormal="@color/colorPrimaryDark"
+        fab:menu_colorPressed="@color/colorPrimaryDark"
+        fab:menu_colorRipple="@color/colorPrimary"
+        fab:menu_icon="@drawable/ic_more_horiz_black_24dp"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="About"
+            app:fab_size="mini"
+            android:id="@+id/aboutMenuId"
+            fab:fab_colorNormal="#37c165"
+            android:onClick="setAbout"
+            android:src="@drawable/ic_info_black_24dp"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#d64646"
+            app:fab_label="Scroll Up"
+            app:fab_size="mini"
+            android:id="@+id/exitButtonId"
+            android:onClick="setUp"
+            android:src="@drawable/ic_arrow_upward_black_24dp"
+            />
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>
